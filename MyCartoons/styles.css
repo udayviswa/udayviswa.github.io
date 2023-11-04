@@ -23,6 +23,7 @@ body{
     display: flex;
     /* margin: 10px; */
     justify-content: center;
+    height: 550px;
 }
 .cards {
     /* border: 3px solid black; */
@@ -31,19 +32,20 @@ body{
     /* background-color: black;
     color: white; */
     width: 320px;
-    height: 500px;
-    margin: 10px;
+    height: 470px;
+    margin: 20px 30px;
     text-align: center;
     padding: 10px;
     /* padding-bottom: 50px; */
 }
 .cards img {
-    width: 300px;
-    height: 420px;
+    width: 280px;
+    height: 400px;
     border-radius: 10px;
     margin-top: 15px;
 }
 
-.cards h2{
-    /* line-height: 10px; */
+.cards p{
+    line-height: 0px;
+    font-size: 23px;
 }

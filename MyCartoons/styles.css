@@ -21,19 +21,29 @@ body{
 }
 #container {
     display: flex;
-    margin: 20px;
+    /* margin: 10px; */
+    justify-content: center;
 }
 .cards {
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(242, 242, 242);
-    width: 450px;
-    height: 450px;
-    margin: 20px;
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    background-color: rgb(230, 230, 230);
+    /* background-color: black;
+    color: white; */
+    width: 320px;
+    height: 500px;
+    margin: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    /* padding-bottom: 50px; */
 }
 .cards img {
-    height: 400px;
+    width: 300px;
+    height: 420px;
     border-radius: 10px;
+    margin-top: 15px;
+}
+
+.cards h2{
+    /* line-height: 10px; */
 }

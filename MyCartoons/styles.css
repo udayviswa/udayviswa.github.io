@@ -8,19 +8,20 @@ body{
 }
 #header {
     display: grid;
-    border: 2px solid lightseagreen;
+    /* border: 2px solid lightseagreen; */
     /* border-radius: 20px; */
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(6, 17%);
     padding: 20px;
     text-align: center; 
     font-size: 20px;
     border-radius: 20px;
     /* background-color: rgb(235, 235, 235); */
     /* background-color: lightseagreen; */
-    margin: 30px 150px;
-    margin-bottom: 0px;
+    margin: 30px 50px;
+    margin-bottom: 30px;
     height: 20px;
     box-shadow: lightseagreen 1px 0 10px;
+    
 }
 #header a{
     text-decoration: none;
@@ -29,11 +30,29 @@ body{
 #header a:hover{
     font-size: 25px;
 }
+/* new button added*/
+#header button {
+    font-family: "Caros Bold";
+    width: fit-content;
+    background-color: white;
+    border: 0px solid black;
+    font-size: 20px;
+    color: lightseagreen;
+    margin-left: 40px;
+    /* box-shadow: lightseagreen 1px 0 10px; */
+}
+
+#header button:hover{
+    font-size: 25px;
+}
+
 #container {
     display: flex;
+    /* flex: 3; */
     /* margin: 10px; */
     justify-content: center;
     height: 550px;
+    flex-wrap: wrap; /* new thing flex with responsive*/
     /* margin-top: 0px; */
     /* text-shadow: lightseagreen 1px 0px 10px; */
 
@@ -61,13 +80,14 @@ body{
     height: 420px;
     border-radius: 15px;
     margin-top: 15px;
-    border: 3px solid lightseagreen;
+    box-shadow:  10px 0px 10px lightseagreen;
+    /* border: 3px solid lightseagreen; */
 }
 
 .cards img:hover{
     /* border: 4px solid white; */
     border: 1px solid lightseagreen;
-    box-shadow:  30px 5px 50px lightseagreen;
+    box-shadow:  30px 5px 30px lightseagreen;
 }
 .cards p:hover{
     /* border: 4px solid dodgerblue; */
@@ -82,10 +102,11 @@ body{
     color: lightseagreen;
 }
 
+
 .cards p{
     /* line-height: 10px; */
     font-size: 22px;
-    margin: 10px auto auto auto;
+    margin: 20px auto auto auto;
     /* height: 30px; */
     border-radius: 15px;
     width: 280px;
@@ -93,10 +114,10 @@ body{
     /* background-color: black; */
     cursor: pointer;
     /* border: 2px solid black; */
-    color: white;
-        background-color: lightseagreen;
-        /* box-shadow: lightseagreen 0px 0 10px; */
-
-
-
+    color: lightseagreen;
+        background-color: white;
+        box-shadow: lightseagreen 0px 0 10px;
+}
+.newclass {
+    background-color: black;
 }

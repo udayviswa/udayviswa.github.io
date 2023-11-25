@@ -18,7 +18,7 @@ body{
     border-radius: 15px;
     /* background-color: rgb(235, 235, 235); */
     /* background-color: lightseagreen; */
-    margin: 30px 150px;
+    margin: 30px 180px;
     margin-bottom: 10px;
     height: 20px;
     box-shadow: lightseagreen 1px 0 20px;
@@ -80,7 +80,7 @@ body{
 .cards img {
     width: 300px;
     height: 420px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-top: 15px;
     box-shadow:  10px 0px 10px lightseagreen;
     /* border: 3px solid lightseagreen; */
@@ -120,18 +120,28 @@ body{
         background-color: teal;
         box-shadow: lightseagreen 0px 0 10px;
 }
-/* .movieNames {
-    font-size: 22px;
-    margin: 20px auto auto auto;
-    border-radius: 15px;
-    width: 280px;
-    padding: 10px;
-    cursor: pointer;
-    color: lightseagreen;
-        background-color: white;
-        box-shadow: lightseagreen 0px 0 10px;
-} */
 
-.newclass {
-    background-color: black;
+/* New filter function */
+
+.post-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+
+.filter-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
+    color: teal;
+}
+
+.active-filter{
+    background: teal;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
 }

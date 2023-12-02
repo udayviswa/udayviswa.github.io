@@ -96,37 +96,6 @@ $(document).ready(function(){
 
 function favourite(){
 }
-// dark mode code 
-function darkMode(){
-    let color1 = document.getElementById("darkMode").innerText;
-    if ( color1 == "Light"){
-      lightMode();
-    }
-    else{
-      dark();
-    }
-}
-
-function dark(){
-  document.body.style.backgroundColor = "black";
-  document.getElementById("darkMode").style.backgroundColor = "white";
-  $(".movieNames").css("background-color", "black");
-  $("#header").css("background-color", "black");
-  // $(".filter-item").css("color", "white");
-  document.getElementById("darkMode").innerText = "Light";
-}
-
-function lightMode(){
-    document.body.style.backgroundColor = "white";
-    document.getElementById("darkMode").style.backgroundColor = "white";
-    $(".movieNames").css("background-color", "teal");
-    $(".movieNames").css("color", "white");
-    $("#header").css("background-color", "teal");
-    // $(".filter-item").css("color", "teal");
-    // $(".active-filter").css("background-color", "teal");
-    // $(".active-filter").css("color", "white");
-    document.getElementById("darkMode").innerText = "Dark";
-}
 
 // filter function 
 
@@ -134,11 +103,11 @@ $(document).ready(function () {
   $(".filter-item").click(function () {
       const value = $(this).attr("data-filter");
       if (value == "all"){
-          $(".cards").show("3000")
+          $(".cards").show("fast", "linear")
       } else{
           $(".cards")
               .not("." + value)
-              .hide(1000);
+              .hide("fast", "linear");
           $(".cards")
           .filter("." + value)
           .show("3000")
